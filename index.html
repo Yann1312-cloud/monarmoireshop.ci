@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Armoire - Boutique en ligne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mon Armoire</h1>
+            <p>Votre boutique en ligne de vêtements tendance</p>
+            <input type="text" id="searchBar" placeholder="Rechercher un produit...">
+            <nav>
+                <a href="#" id="homeLink">Accueil</a>
+                <a href="#" id="cartLink">Panier (<span id="cartCount">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Liste des produits -->
+        <section id="productListSection">
+            <h2>Nos produits</h2>
+            <div id="productList">
+                <!-- Les produits seront injectés ici par JavaScript -->
+            </div>
+        </section>
+
+        <!-- Section 2: Formulaire d'inscription -->
+        <section id="registrationSection" style="display: none;">
+            <h2>Inscription</h2>
+            <form id="registrationForm">
+                <input type="text" id="name" placeholder="Nom complet" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+
+        <!-- Section 3: Détails du produit -->
+        <section id="productDetailsSection" style="display: none;">
+            <h2>Détails du produit</h2>
+            <div id="productDetails">
+                <!-- Les détails du produit seront injectés ici par JavaScript -->
+            </div>
+            <button id="backToListButton">Retour à la liste</button>
+        </section>
+
+        <!-- Section 4: Panier -->
+        <section id="cartSection" style="display: none;">
+            <h2>Votre panier</h2>
+            <div id="cartItems">
+                <!-- Les articles du panier seront injectés ici par JavaScript -->
+            </div>
+            <button id="backToProductsButton">Retour aux produits</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mon Armoire. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
